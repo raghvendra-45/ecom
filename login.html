@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="shortcut icon" href="fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      .login-container {
+        background-color: #fff;
+        width: 25rem;
+        margin: 8rem auto;
+        padding-top: 2.4rem;
+        padding-left: 2.1rem;
+        padding-right: 2.1rem;
+        padding-bottom: 3rem;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 22px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      /* label {
+        padding-bottom: 10px;
+      } */
+
+      input[type="text"],
+      input[type="password"] {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-right: 1rem;
+        margin-top: 0.3rem;
+      }
+
+      .remember {
+        margin-right: 4rem;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .forgot-password {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .register-link {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .register-link a {
+        color: #007bff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body_container">
+
+      <div class="nav_container">
+        <header class="navigation">
+            <div class="nav_logo">
+                <a href="index.html"> E-<span class="designk">k</span>art</a>
+            </div>
+
+            <div class="nav_right">
+                <nav class="nav_menu" id="nav-menu">
+                    <ul class="nav_lists">
+                        <li class="nav_list">
+                            <a href="index.html" class="nav_link" id="link-1">Home</a>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#" class="nav_link" id="link-2">About</a>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#section2" class="nav_link" id="link-3">Shop</a>
+                        </li>
+                        <li class="nav_list">
+                            <a href="#" class="nav_link" id="link-4">Contact</a>
+                        </li>
+                        <li class="nav_list">
+                            <a href="login.html" class="nav_link" id="link-5">Login <i class="ri-login-circle-line"></i></a>
+                        </li>  
+                    </ul>
+
+                    <div class="nav_close" id="close-menu">
+                        <a href="" class="close"><i class="ri-close-line"></i></a>
+                    </div>
+                </nav>
+
+
+                <div class="bag">
+                    <a href="" class="nav_link"><i class="ri-shopping-bag-line"></i></a>
+                </div>
+
+                <div class="nav_toggle" id="toggle-menu">
+                    <a href="#" class="toggle"><i class="ri-menu-line"></i></a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+      <div class="login-container">
+        <h2>Login</h2>
+        <div class="form_container">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="remember-me" name="remember-me" />
+              <label for="remember-me" class="remember">Remember me</label>
+              <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+            <button type="submit">Login</button>
+          </form>
+          <div class="register-link">
+            <p>Don't have an account? <a href="#">Register</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" id="footer1">
+      <div class="footer-inner">
+          <div class="footer-column1">
+              <h3>About Us</h3><br>
+              <ul class="about_lists">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Delivery Information</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Condition</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="footer-column2">
+              <h3>Categories</h3><br>
+              <ul>
+                  <li><a href="#">Groceries</a></li>
+                  <li><a href="#">Clothing</a></li>
+                  <li><a href="#">Electronics</a></li>
+                  <li><a href="#">Books</a></li>
+              </ul>
+          </div>
+          <div class="footer-column3">
+              <h3>Follow Us</h3>
+              <div class="social-icons">
+                  <a href="https:\\www.facebook.com"><i class="ri-facebook-circle-fill"></i></a>
+                  <a href="https:\\www.instagram.com"><i class="ri-instagram-fill"></i></i></a>
+                  <a href="https:\\www.youtube.com"><i class="ri-youtube-fill"></i></a>
+              </div>
+          </div>
+          <div class="footer-column4">
+              <h3>Contact Us</h3>
+              <br>
+              <p><b>Address:</b>123 Main Street, Cityville</p>
+              <p><b>Email:</b> info_ekart12@gmail.com</p>
+              <p><b>Phone:</b> 123-456-7890</p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Your E-Commerce Website. All rights reserved.</p>
+      </div>
+  </footer>
+
+    <script src="swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

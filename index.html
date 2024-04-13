@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-kart</title>
+    <link rel="shortcut icon" href="fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+<body>
+
+        <div class="nav_container">
+            <header class="navigation">
+                <div class="nav_logo">
+                    <a href="index.html"> E-<span class="designk">k</span>art</a>
+                </div>
+
+                <div class="nav_right">
+                    <nav class="nav_menu" id="nav-menu">
+                        <ul class="nav_lists">
+                            <li class="nav_list">
+                                <a href="index.html" class="nav_link" id="link-1">Home</a>
+                            </li>
+                            <li class="nav_list">
+                                <a href="#footer1" class="nav_link" id="link-2">About</a>
+                            </li>
+                            <li class="nav_list">
+                                <a href="#section2" class="nav_link" id="link-3">Shop</a>
+                            </li>
+                            <li class="nav_list">
+                                <a href="#footer1" class="nav_link" id="link-4">Contact</a>
+                            </li>
+                            <li class="nav_list">
+                                <a href="login.html" class="nav_link" id="link-5">Login <i class="ri-login-circle-line"></i></a>
+                            </li>  
+                        </ul>
+
+                        <div class="nav_close" id="close-menu">
+                            <a href="" class="close"><i class="ri-close-line"></i></a>
+                        </div>
+                    </nav>
+
+
+                    <div class="bag">
+                        <a href="" class="nav_link"><i class="ri-shopping-bag-line"></i></a>
+                    </div>
+
+                    <div class="nav_toggle" id="toggle-menu">
+                        <a href="#" class="toggle"><i class="ri-menu-line"></i></a>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <main class="main_container">
+
+            <section class="section1">
+               <a href="earbuds.html" class="section1_img_link"><img src="earbuds_img/font_img.png" alt="" class="section1_img"></a>
+            </section>
+
+            <section class="section2_section" id="section2">
+                <h2 class="section2_title">
+                    STORE
+                </h2>
+                <div class="section2_container">
+                    <div class="section2_swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="section2_article swiper-slide">
+                                <a href="grocery.html"><img src="section2_img/grocery.png" alt="" class="section2_img"></a>
+                                <a href="grocery.html"><span class="section2_model">grocery</span></a>
+                            </article>
+                            <article class="section2_article swiper-slide">
+                                <a href="fashion.html"><img src="section2_img/fashion.jpg" alt="" class="section2_img"></a>
+                               <a href="fashion.html"><span class="section2_model">fashion</span></a> 
+                            </article>
+                            <article class="section2_article swiper-slide">
+                                <a href="electronics.html"><img src="section2_img/electronics.jpg" alt="" class="section2_img"></a>
+                               <a href="electronics.html"><span class="section2_model">Electronics</span></a> 
+                            </article>
+                            <article class="section2_article swiper-slide">
+                               <a href="book.html"><img src="section2_img/books.png" alt="" class="section2_img"></a> 
+                                <a href="book.html"><span class="section2_model">Books</span></a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sponsor_section">
+                <h2>Featured Sponsors</h2>
+                <div class="sponsor_container container grid">
+                    <a href="https://www.amazon.com/" class="sponsor_img"><i class="ri-amazon-fill"></i><span class="sponsor_name"> Amazon</span></a>
+                    <a href="https://www.apple.com/" class="sponsor_img"><i class="ri-apple-fill"></i><span class="sponsor_name"> Apple</span> </a>
+                    <a href="https://www.youtube.com/" class="sponsor_img"><i class="ri-youtube-fill"></i> <span class="sponsor_name"> Youtube</span></a>
+                    <a href="https://www.spotify.com/" class="sponsor_img"><i class="ri-spotify-fill"></i><span class="sponsor_name"> Spotify</span></a>
+                </div>
+            </section>
+
+            <!-- <section id="sign_up">
+                <div class="left_sign">
+                    <h3>Sign Up For Newsletters</h3>
+                    <p>Get E-mail updates about our latest shop <span class="mid_text">special offers</span> </p>
+                </div>
+
+                <div class="right_sign">
+                    <input type="text" name="" id="text_form"><span><button type="submit">Sign Up</button></span>
+                </div>
+            </section> -->
+
+
+            <section id="contactus">
+                <h1 class="h-primary">Leave Us Message</h1>
+                <div class="formof">
+                <form action="backend.php">
+                    <div class="biodata">
+                    <label for="name">Name:</label>
+                    <input type="text" name="my name is" placeholder="Enter your name" id="name">
+                </div>
+                    <div class="biodata">
+                    <label for="email">Email:</label>
+                    <input type="email" name="my email is" placeholder="Enter your email" id="email">
+                </div>
+                    <div class="biodata">
+                    <label for="phone">Phone number:</label>
+                    <input type="text" name="my phone is" placeholder="Enter your phone" id="phone">
+                </div>
+                    <div class="biodata">
+                    <label for="message">Message:</label>
+                    <textarea name="my message" id="message" cols="20" rows="10"></textarea>
+                </div>
+
+                <div class="button_txt">
+                    <button type="submit">Submit</button>
+                </div>
+                </form>
+            </div>
+            </section>
+
+
+            <footer class="footer" id="footer1">
+                <div class="footer-inner">
+                    <div class="footer-column1">
+                        <h3>About Us</h3><br>
+                        <ul class="about_lists">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column2">
+                        <h3>Categories</h3><br>
+                        <ul>
+                            <li><a href="#">Groceries</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Books</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column3">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="https:\\www.facebook.com"><i class="ri-facebook-circle-fill"></i></a>
+                            <a href="https:\\www.instagram.com"><i class="ri-instagram-fill"></i></i></a>
+                            <a href="https:\\www.youtube.com"><i class="ri-youtube-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column4">
+                        <h3>Contact Us</h3>
+                        <br>
+                        <p><b>Address:</b>123 Main Street, Cityville</p>
+                        <p><b>Email:</b> info_ekart12@gmail.com</p>
+                        <p><b>Phone:</b> 123-456-7890</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Your E-Commerce Website. All rights reserved.</p>
+                </div>
+            </footer>
+
+        </main>
+
+
+    <script src="swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

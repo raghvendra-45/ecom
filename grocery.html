@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery</title>
+    <link rel="shortcut icon" href="fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .earbuds_main_container{
+            width: 85%;
+            margin: 6rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(17rem,19rem));
+            row-gap: 1.5rem;
+            column-gap: 1rem;
+            justify-content: center;
+            /* background-color: aquamarine; */
+
+        }
+        .product{
+            background-color: aliceblue;
+            border: 2px solid rgb(138, 136, 136);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 30rem;
+            width: 17rem;
+            gap: 1.2rem;
+            box-shadow:  2px 2px 10px #484848;
+            border-radius: 0.4rem;
+            overflow: hidden;
+        }
+        .product_img{
+            height: 46%;
+            width: 100%;
+        }
+
+        .description{
+            font-size: 1rem;
+            font-weight:800;
+            padding: 0 0.5rem;
+            text-align: center;
+        }
+
+        .price{
+            font-size: 1.5rem;
+            color: blue;
+        }
+
+        .cart{
+            background-color: rgba(99, 4, 4, 0.789);
+            width: 100%;
+            height: 2.5rem;
+            font-size: 1rem;
+            color: aliceblue;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="body_container">
+        
+
+        <div class="nav_container">
+            <header class="navigation">
+                <div class="nav_logo">
+                    <a href="index.html">E-<span class="designk">k</span>art</a>
+                </div>
+
+                <div class="nav_right">
+                    <nav class="nav_menu" id="nav-menu">
+                        <ul class="nav_lists">
+                            <li class="nav_list">
+                                <a href="index.html" class="nav_link" id="link-1">Home</a>
+                            </li>
+                            <li class="nav_list">
+                                <a href="#" class="nav_link" id="link-2">About</a>
+                            </li>
+                            <li class="nav_list">
+                                <a href="#" class="nav_link" id="link-3">Shop</a>
+                            </li>
+                            <li class="nav_list">
+                                <a href="#" class="nav_link" id="link-4">Contact</a>
+                            </li>
+                            <li class="nav_list">
+                                <a href="#" class="nav_link" id="link-5">Services</a>
+                            </li>  
+                        </ul>
+
+                        <div class="nav_close" id="close-menu">
+                            <a href="" class="close"><i class="ri-close-line"></i></a>
+                        </div>
+                    </nav>
+
+
+                    <div class="bag">
+                        <a href="" class="nav_link"><i class="ri-shopping-bag-line"></i></a>
+                    </div>
+
+                    <div class="nav_toggle" id="toggle-menu">
+                        <a href="#" class="toggle"><i class="ri-menu-line"></i></a>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+
+
+        <main class="earbuds_main_container">
+
+            <div class="product">
+    
+              <img src="grocery_img/image-1.png" alt="" class="product_img" />
+              <p class="description">
+                Ksheer Cow Ghee Slowly cooled for a unique grainy texture | Enhances digestion and fortifies immune system 1 Liter
+              </p>
+              <h4 class="price"><sup>₹</sup>657</h4>
+              <button class="cart"><pre>Add To Cart  <i class="ri-shopping-cart-fill"></pre></i></button>
+            </div>
+            <div class="product">
+    
+              <img src="grocery_img/image-2.png" alt="" class="product_img" />
+              <p class="description">
+                Tata Simply Better Pure & Unrefined Cold Pressed Mustard Oil,Naturally Cholesterol Free, 1L, Rich Aroma & Flavour of Real Mustard Seeds, A1 Grade Mustard Seeds
+              </p>
+              <h4 class="price"><sup>₹</sup>326</h4>
+              <button class="cart"><pre>Add To Cart  <i class="ri-shopping-cart-fill"></pre></i></button>
+            </div>
+            <div class="product">
+    
+              <img src="grocery_img/image-3.png" alt="" class="product_img" />
+              <p class="description">
+                Aashirvaad Superior MP Atta, 5kg Pack Superior MP Atta, 5kg Pack
+              </p>
+              <h4 class="price"><sup>₹</sup>299</h4>
+              <button class="cart"><pre>Add To Cart  <i class="ri-shopping-cart-fill"></pre></i></button>
+            </div>
+            <div class="product">
+    
+              <img src="grocery_img/image-4.png" alt="" class="product_img" />
+              <p class="description">
+                Dabur Honey - 1kg | 100% Pure | World's No.1 Honey Brand with No Sugar Adulteration
+              </p>
+              <h4 class="price"><sup>₹</sup>1,119</h4>
+              <button class="cart"><pre>Add To Cart  <i class="ri-shopping-cart-fill"></pre></i></button>
+            </div>
+            <div class="product">
+    
+              <img src="grocery_img/image-5.png" alt="" class="product_img" />
+              <p class="description">
+                Kellogg's Chocos Variety Pack of 7, 153g/168g with Whole Grain | Source of Calcium, High in Protein, with 10 Essential Vitamins & Minerals, Source of Fibre | Breakfast Cereal for Kids
+
+              </p>
+              <h4 class="price"><sup>₹</sup>85</h4>
+              <button class="cart"><pre>Add To Cart  <i class="ri-shopping-cart-fill"></pre></i></button>
+            </div>
+            <div class="product">
+    
+              <img src="grocery_img/image-6.png" alt="" class="product_img" />
+              <p class="description">
+                Nature Prime 100% Natural Premium Mix Dry Fruits 500Gm with Almonds | Cashew | Kishmish | Apricot | Black Raisins | Dried Kiwi | Nuts and Dry Fruits 500Gm (Jar pack)
+              </p>
+              <h4 class="price"><sup>₹</sup>459</h4>
+              <button class="cart"><pre>Add To Cart  <i class="ri-shopping-cart-fill"></pre></i></button>
+            </div>
+            <div class="product">
+    
+              <img src="grocery_img/image-7.png" alt="" class="product_img" />
+              <p class="description">
+                Sunfeast Marie Light Active Bag, 1 kg
+              </p>
+              <h4 class="price"><sup>₹</sup>124</h4>
+              <button class="cart"><pre>Add To Cart  <i class="ri-shopping-cart-fill"></pre></i></button>
+            </div>
+            <div class="product">
+    
+              <img src="grocery_img/image-8.png" alt="" class="product_img" />
+              <p class="description">
+                NUTRI BINGE Pistachios (Pista 500 Grams - Pack of 1), Premium California Roasted and Salted Pista Dry Fruits, Fresh Nutrient Rich Vegan Healthy Snacks
+              </p>
+              <h4 class="price"><sup>₹</sup>534</h4>
+              <button class="cart"><pre>Add To Cart  <i class="ri-shopping-cart-fill"></pre></i></button>
+            </div>
+            <div class="product">
+    
+              <img src="grocery_img/image-9.png" alt="" class="product_img" />
+              <p class="description">
+                Cadbury Oreo Vanilla Flavour Crème Sandwich Biscuit, 288.75 g(packaging may vary)
+              </p>
+              <h4 class="price"><sup>₹</sup>59</h4>
+              <button class="cart"><pre>Add To Cart  <i class="ri-shopping-cart-fill"></pre></i></button>
+            </div>
+            <div class="product">
+    
+              <img src="grocery_img/image-10.png" alt="" class="product_img" />
+              <p class="description">
+                Saffola Oats | Rolled Oats | Delicious Creamy Oats | 100% Natural | High Protein & Fibre | Healthy Cereal for weight loss | 1Kg with 300g Free
+              </p>
+              <h4 class="price"><sup>₹</sup>204</h4>
+              <button class="cart"><pre>Add To Cart  <i class="ri-shopping-cart-fill"></pre></i></button>
+            </div>
+            <div class="product">
+    
+              <img src="grocery_img/image-11.png" alt="" class="product_img" />
+              <p class="description">
+                Nuts About You Premium ALMONDS, 200 g | New Crop | Premium | 100% Natural | Badam | Fresh & Crisp 
+              </p>
+              <h4 class="price"><sup>₹</sup>275</h4>
+              <button class="cart"><pre>Add To Cart  <i class="ri-shopping-cart-fill"></pre></i></button>
+            </div>
+            <div class="product">
+    
+              <img src="grocery_img/image-12.png" alt="" class="product_img" />
+              <p class="description">
+                Nutraj Premium Raw California Almonds Whole Value Pouch Pack 1Kg | 100% Natural and Quality Badam Giri | Dry Fruits Real Nuts
+              </p>
+              <h4 class="price"><sup>₹</sup>869</h4>
+              <button class="cart"><pre>Add To Cart  <i class="ri-shopping-cart-fill"></pre></i></button>
+            </div>
+
+
+            
+            
+    
+          </main>
+
+
+          <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-column1">
+                    <h3>About Us</h3><br>
+                    <ul class="about_lists">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column2">
+                    <h3>Categories</h3><br>
+                    <ul>
+                        <li><a href="#">Groceries</a></li>
+                        <li><a href="#">Clothing</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Books</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column3">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https:\\www.facebook.com"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="https:\\www.instagram.com"><i class="ri-instagram-fill"></i></i></a>
+                        <a href="https:\\www.youtube.com"><i class="ri-youtube-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column4">
+                    <h3>Contact Us</h3>
+                    <br>
+                    <p><b>Address:</b>123 Main Street, Cityville</p>
+                    <p><b>Email:</b> info_ekart12@gmail.com</p>
+                    <p><b>Phone:</b> 123-456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your E-Commerce Website. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
