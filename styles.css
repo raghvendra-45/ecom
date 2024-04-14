@@ -7,6 +7,8 @@
 body {
   height: 100%;
   width: 100%;
+  background: rgb(222,222,244);
+    background: linear-gradient(90deg, rgb(235, 235, 238) 0%, rgb(229, 232, 234) 100%);
 }
 
 html {
@@ -57,8 +59,8 @@ a {
   color: aliceblue;
 }
 
-.designk{
-    color: orangered;
+.designk {
+  color: orangered;
 }
 
 .nav_right {
@@ -94,6 +96,21 @@ a {
 
 .bag {
   font-size: 1.2rem;
+  z-index: -1;
+}
+.num{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: yellow;
+  position: relative;
+  top: 5px;
+  right: -45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 1020px) {
@@ -139,12 +156,14 @@ a {
 .section1 {
   width: 100%;
   margin-top: 4rem;
+  
 }
 
-.section1_img {
+.section1_img_link img{
   width: 100%;
-  height: 18rem;
+
 }
+
 
 #section2 {
   z-index: -1;
@@ -232,13 +251,11 @@ a {
   gap: 4rem 8rem;
 }
 
-@media screen and (max-width:528px) {
-    .sponsor_container{
-        grid-template-columns: repeat(1,max-content);
-    }
+@media screen and (max-width: 528px) {
+  .sponsor_container {
+    grid-template-columns: repeat(1, max-content);
+  }
 }
-
-
 
 /* #sign_up::before{
     content: "";
@@ -250,131 +267,131 @@ a {
     opacity: 0.5;
 } */
 
-
-
-
-
-.formof form{width: 40%;}
-.formof{display: flex;
-align-items: center;
-flex-wrap: wrap;
-justify-content: center;
-padding-bottom: 15px;}
-.biodata input{width: 100%;
-    padding: 2px 8px;
-font-size: 1 rem;
-font-weight: bold;
-border-radius: 4px;}
-.biodata label{font-size: 1.1rem;
-font-weight: bold;}
-.biodata textarea{width: 100%;
-    padding: 2px 8px;
-border-radius: 4px;
-font-size: 1rem;
-font-weight: bold}
-#contactus h1{text-align: center;}
-#contactus::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.5;
-    background: url(sign_up_img.jpg) no-repeat center center/cover; 
+.formof form {
+  width: 70%;
 }
-#contactus{position: relative;}
-.biodata{padding:6px 1px;
+.formof {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.biodata input {
+  width: 100%;
+  padding: 2px 8px;
+  font-size: 1 rem;
+  height: 2rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.biodata label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.biodata textarea {
+  width: 100%;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#contactus h1 {
+  text-align: center;
 }
 
-.h-primary{
-    padding: 1rem;
-    font-size: 2rem;
+#contactus {
+  position: relative;
+}
+.biodata {
+  padding: 6px 1px;
 }
 
-
-.button_txt button{
-    height: 2.2rem;
-    width: 6rem;
-    border-radius: 7px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
+.h-primary {
+  padding: 1rem;
+  font-size: 2rem;
 }
 
+.button_txt button {
+  height: 2.2rem;
+  width: 6rem;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color:rgb(243, 230, 225);
+}
 
 .footer {
-    background-color: #cfd0d2;
-    padding: 30px 0;
+  background-color: #cfd0d2;
+  padding: 30px 0;
 }
 
 .footer-inner {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-.about_lists li a{
-    color: #666;
+.about_lists li a {
+  color: #666;
 }
 
-.footer-column2 a{
-    color: #666;
+.footer-column2 a {
+  color: #666;
 }
 
 .footer-column {
-    flex: 1;
-    margin-right: 20px;
+  flex: 1;
+  margin-right: 20px;
 }
 
 .footer-column h3 {
-    color: #333;
-    font-size: 18px;
-    margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .footer-column p {
-    color: #666;
-    margin-bottom: 10px;
+  color: #666;
+  margin-bottom: 10px;
 }
 
 .footer-column ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-column ul li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .footer-column ul li a {
-    color: #666;
-    text-decoration: none;
+  color: #666;
+  text-decoration: none;
 }
 
 .footer-column1 ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .footer-column2 ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .social-icons a {
-    color: #666;
-    font-size: 24px;
-    margin-right: 10px;
+  color: #666;
+  font-size: 24px;
+  margin-right: 10px;
 }
 
 .social-icons a:hover {
-    color: #333;
+  color: #333;
 }
 
 .footer-bottom {
-    margin-top: 20px;
-    text-align: center;
-    color: #666;
-    font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
 }
-
-
-
