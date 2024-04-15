@@ -46,60 +46,62 @@ if (link5) {
   });
 }
 
-let count = parseInt(document.getElementById("count").innerHTML);
+// let count = parseInt(document.getElementById("count").innerHTML);
 const carts = document.querySelectorAll(".cart");
+// window.onload(()=>{
+//   localStorage.setItem('cartItems', 0);
+// })
 carts.forEach((cart) => {
   cart.addEventListener("click", () => {
     
     if(cart.innerHTML == '<pre>Add To Cart  <i class="ri-shopping-cart-fill"></i></pre>'){
         cart.innerHTML = '<pre>Delete from Cart  <i class="ri-shopping-cart-fill"></i></pre>';
-        count++;
+        let prevCount = localStorage.getItem('cartItems');
+        if(prevCount == null) prevCount = 0;
+        localStorage.setItem('cartItems', ++prevCount);
     }
     else{
         cart.innerHTML = '<pre>Add To Cart  <i class="ri-shopping-cart-fill"></i></pre>'
-        count--;
+        prevCount = localStorage.getItem('cartItems');
+        if(prevCount == null) prevCount = 0;
+        localStorage.setItem('cartItems', --prevCount);
     }
-    document.getElementById("count").innerHTML = count;
+    document.getElementById("count").innerHTML = localStorage.getItem('cartItems');
   });
 });
 
+document.getElementById('count').innerHTML = localStorage.getItem('cartItems')==null?0:localStorage.getItem('cartItems');
 
-
-// chatbot
 
 //login
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
   form.addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent form submission
+      event.preventDefault(); 
 
-      // Get input values
+      
       const username = document.getElementById("username").value;
       const password = document.getElementById("password").value;
 
-      // Regular expression for email validation
+    
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-      // Check if username is in email format
+    
       if (!emailRegex.test(username)) {
           alert("Please enter a valid email address as the username.");
           return;
       }
 
-      // Check if password meets length and character/number requirements
+    
       if (password.length < 6 || !/\d/.test(password) || !/[a-zA-Z]/.test(password)) {
           alert("Password must be at least 6 characters long and contain both letters and numbers.");
           return;
       }
 
-      // If both username and password pass validation, you can proceed with form submission
-      // Alternatively, you can perform any other actions here, like AJAX requests to the server
-
-      // For demonstration purposes, alert a success message
-      alert("Login successful!");
-      // You can uncomment the following line to submit the form programmatically
-      // form.submit();
+      
+      window.location.href = 'index.html';
+      
   });
 });
 

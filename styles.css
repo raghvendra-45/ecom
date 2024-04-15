@@ -7,8 +7,12 @@
 body {
   height: 100%;
   width: 100%;
-  background: rgb(222,222,244);
-    background: linear-gradient(90deg, rgb(235, 235, 238) 0%, rgb(229, 232, 234) 100%);
+  background: rgb(222, 222, 244);
+  background: linear-gradient(
+    90deg,
+    rgb(235, 235, 238) 0%,
+    rgb(229, 232, 234) 100%
+  );
 }
 
 html {
@@ -98,7 +102,7 @@ a {
   font-size: 1.2rem;
   z-index: -1;
 }
-.num{
+.num {
   width: 1rem;
   height: 1rem;
   border-radius: 100%;
@@ -156,14 +160,11 @@ a {
 .section1 {
   width: 100%;
   margin-top: 4rem;
-  
 }
 
-.section1_img_link img{
+.section1_img_link img {
   width: 100%;
-
 }
-
 
 #section2 {
   z-index: -1;
@@ -211,6 +212,27 @@ a {
   scale: 1;
 }
 
+.recently_browsed h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.recently_browsed {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  flex-wrap: wrap
+}
+
+.browsed_img img {
+  width: 10rem;
+  height: 11rem;
+}
+
 .sponsor_section {
   background: rgb(63, 54, 66);
   background: linear-gradient(
@@ -256,16 +278,6 @@ a {
     grid-template-columns: repeat(1, max-content);
   }
 }
-
-/* #sign_up::before{
-    content: "";
-    background: url('sign_up_img.jpg') no-repeat center center/cover;
-    position: absolute;
-    width: 100%;
-    height:100%;
-    z-index: -1;
-    opacity: 0.5;
-} */
 
 .formof form {
   width: 70%;
@@ -319,7 +331,7 @@ a {
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
-  background-color:rgb(243, 230, 225);
+  background-color: rgb(243, 230, 225);
 }
 
 .footer {
